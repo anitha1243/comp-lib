@@ -1,0 +1,12 @@
+{
+    "loginEmailLoc":"#email",
+    "loginPwdLoc":"#password",
+    "loginBtnLoc":"#btn-login",
+    "dashBdLinkLoc":"a[href=\"/dashboard\"]",
+    "profileTabLoc":".avatar__content",
+    "settingsTabLoc":"Settings",
+    "groupsTabLoc":"Groups",
+    "muiTabLoc": ".MuiTab-wrapper",
+    "billingTabLoc":"Billing",
+    "logoutTabLoc":"Logout"
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-12T04:35:14.023Z",
+    "end": "2020-08-12T04:35:53.536Z",
+    "duration": 39513,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "55aa8a15-433a-475c-a2f2-1ffe3d142ad5",
+      "title": "",
+      "fullFile": "cypress\\integration\\grpsBillingTabPresent.spec.js",
+      "file": "cypress\\integration\\grpsBillingTabPresent.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a66dcd4-81eb-4685-a89d-f612b8e46f8b",
+          "title": "Navigate to Groups -> Billing Tab",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Settings -> Groups",
+              "fullTitle": "Navigate to Groups -> Billing Tab Settings -> Groups",
+              "timedOut": null,
+              "duration": 39347,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(this.locators);\ncy.clickProfileTab(this.locators.profileTabLoc);\ncy.clickSettingsTab(this.locators.settingsTabLoc);\ncy.clickGroupsTab(this.locators.groupsTabLoc);\ncy.get(this.locators.muiTabLoc).contains(new RegExp(this.locators.billingTabLoc, \"g\"));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: '/Billing/g' within the element: [ <span.MuiTab-wrapper>, 1 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: '/Billing/g' within the element: [ <span.MuiTab-wrapper>, 1 more... ] but never did.\n    at Context.eval (https://app-dev.operata.io/__cypress/tests?p=cypress\\integration\\grpsBillingTabPresent.spec.js:15:37)",
+                "diff": null
+              },
+              "uuid": "fa64062b-6403-42b8-8516-d4d0fe3b704e",
+              "parentUUID": "9a66dcd4-81eb-4685-a89d-f612b8e46f8b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fa64062b-6403-42b8-8516-d4d0fe3b704e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 39347,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

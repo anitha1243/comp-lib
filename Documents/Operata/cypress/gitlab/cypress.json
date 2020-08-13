@@ -1,0 +1,18 @@
+{
+  "defaultCommandTimeout": 10000,
+  "baseUrl": "https://app-dev.operata.io/",
+  "env": {
+    "email": "anitha@operata.com",
+    "password": "Haq785$%"
+  },
+  "video": true,
+  "projectId": "fpd38g",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/report/mochawesome-report",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  }
+}
